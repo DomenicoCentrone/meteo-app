@@ -53,7 +53,7 @@ const Weather = () => {
   };
 
   return (
-    <div>
+    <div className='card'>
       <input value={city} onChange={(e) => setCity(e.target.value)} placeholder="Citta'" />
       <button onClick={fetchWeather} disabled={!city.trim()}>Cerca 🔍</button>
       {weatherData && weatherData.main && (
